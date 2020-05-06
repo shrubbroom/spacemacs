@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: lab_header
+# key: //head
+# --
+//module: ${1:unname}
+//version: ${2:0.0.1}
+//date: `(format-time-string "%b %d, %Y")`
+//author: ${3:Ke Wu}
+$0

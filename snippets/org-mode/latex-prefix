@@ -1,0 +1,29 @@
+# -*- mode: snippet -*-
+# name: latex-prefix
+# key: #+latex
+# --
+#+TITLE: ${1:untitle}
+#+AUTHOR: ${2:unname}
+#+DATE: \today
+#+EMAIL: ${3:shrubbroom@sjtu.edu.cn}
+
+#+OPTIONS: H:5 num:t toc:2 \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS: TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+DESCRIPTION: ${4:undescription}
+#+KEYWORDS:
+#+LANGUAGE: en
+#+BABEL: :cache yes
+
+#+LATEX_CLASS: ${5:lengyue-org-article}  %you can use lengyue-org-book/beamer
+#+LATEX_CLASS_OPTIONS:[${6:oneside,A4paper,12pt}]
+#+LATEX_HEADER_EXTRA:
+#+LaTeX_HEADER: \geometry{left=${7:2.5cm},right=${8:2.5cm},top=${9:2.5cm},bottom=${10:2.5cm}}
+#+LaTeX_HEADER: \graphicspath{{pic/}}
+#+LaTeX_HEADER: \hypersetup{colorlinks,linkcolor=black,filecolor=black,urlcolor=blue,citecolor=black}
+#+LaTeX_HEADER: \setcounter{secnumdepth}{4}
+#+LaTeX_HEADER: \titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+#+LaTeX_HEADER: \linespread{1.2}
+$0
