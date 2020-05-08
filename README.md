@@ -1,3 +1,5 @@
+This is my private directory of Spacemacs.
+
 # Private directory
 
 The content of this directory is ignored by Git. This is the default place
